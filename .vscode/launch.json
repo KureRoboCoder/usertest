@@ -1,0 +1,37 @@
+{
+    
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "AtCoder Debug (I/O Redirection)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/a.out",
+            "args": [],
+            "stopAtConnect": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [
+                {
+                    "name": "ASAN_OPTIONS",
+                    "value": "detect_leaks=0"
+                }
+            ],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "リダイレクトの設定: in.txtから入力し、out.txtへ出力",
+                    "text": "set args < in.txt > out.txt",
+                    "ignoreFailures": false
+                }
+            ],
+            "preLaunchTask": "build for debugging"
+        }
+    ]
+}
