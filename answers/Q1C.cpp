@@ -21,7 +21,7 @@ int main(void) {
         }
     }
 
-    cout << s << endl << hmax << endl;
+    cout << hmax << endl << s << endl;
 
     return 0;
 }
