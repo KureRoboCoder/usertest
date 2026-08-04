@@ -13,6 +13,6 @@ int main(void) {
     }else {
         cout << "GROUP" << ((c - 'A' + 5) % 7 + 1) << endl;
     }
-
+//
     return 0;
 }
