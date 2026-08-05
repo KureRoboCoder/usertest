@@ -11,8 +11,8 @@ int main(void) {
     int count = 0;
     for (int i = l; i <= r; i++) {
         for (int j = i; j <= r; j++) {
-            if ((i + j) % 10 == 7) {
-                count++;
+            for (int k = j; k <= r; k++) {
+                if ((i + j + k) % 3 == 0)   count++;
             }
         }
     }
