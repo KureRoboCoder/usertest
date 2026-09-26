@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -13,6 +14,8 @@ int main(void) {
         cin >> h[i];
     }
 
+    sort(h.begin(), h.end(), greater<int>());
+    
     int a;
     cin >> a;
 
